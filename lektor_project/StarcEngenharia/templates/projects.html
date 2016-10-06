@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+{% for project in site.get('/projects').children %}
+{% set image = project.attachments.images.first() %}
+<div class="element clearfix col1-3 portfolio portfolio2  overflow">
+    <div class="movable-content">
+        <div class="images"><img src="{{ image|url }}" alt="" /></div>
+        <div class="title">
+            <h4>{{ project.name }}</h4>
+            <p>{{ project.type }}</p>
+        </div>
+    </div>
+    <div class="infos">
+        <div class="nav-button2 center"> <span class="nav-bar"></span> <span class="nav-bar"></span> <span class="nav-bar"></span> </div>
+        <a href="{{ project|url }}#filter=.{{ project.id }}" class="tippy">
+            <div class="tab"><i class="icons view-more"></i></div>
+            <div class="alignleft">
+                <div class="hover-title">Ver Detalhes</div>
+            </div>
+        </a>
+        <div class="clear"></div>
+        <a class="video-popup tippy" href="http://player.vimeo.com/video/38370036?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff">
+            <div class="tab"><i class="icons video"></i></div>
+            <div class="alignleft">
+                <div class="hover-title">Video in Lightbox</div>
+            </div>
+        </a>
+        <div class="clear"></div>
+        <a href="#" onClick="return false" class="tippy">
+            <div class="tab last"><i class="icons link"></i></div>
+            <div class="alignleft">
+                <div class="hover-title">Website</div>
+            </div>
+        </a>
+        <div class="hover-content"><span>Cliente: {{ project.name }}<br />
+            Data: {{ project.date }}<br />
+            Tipo: {{ project.type }}<br />
+            Tipo: {{ project.area }}<br />
+        </div>
+    </div>
+</div>
+{% endfor %}
+<div class="element home clearfix col2-3 contact">
+    <div id="map"></div>
+</div>
+{% endblock %}
