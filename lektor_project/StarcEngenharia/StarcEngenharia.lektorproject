@@ -1,0 +1,8 @@
+[project]
+name = StarcEngenharia
+
+[servers.ghpages]
+name = github
+enabled = yes
+default = yes
+target = ghpages+https://gustavo7lagoas/gustavo7lagoas.github.io
