@@ -89,6 +89,7 @@ h4 { font-size:16px; font-weight:700; color:#d4d4d4; padding:47px 40px 0px 40px;
 .col2-3 { width:620px; height:330px; margin:10px; float:left; background-color:#222325; background-color: rgba(255,255,255,0.05);}
 .col2-3.no-border {width:620px; height:330px; margin:10px; float:left; border:0px solid #0c0c0d;  -moz-box-shadow: inset 1px 1px 120px rgba(0, 0, 0, 0); -webkit-box-shadow: inset 1px 1px 120px rgba(0, 0, 0, 0); box-shadow: inset 1px 1px 120px rgba(0, 0, 0, 0);  background:none; }
 .col2-3.contact { width:620px; height:330px; margin:10px; float:left; border:0; }
+.col2-3.contact.map { width:620px; height:680px; margin:10px; float:left; border:0; }
 .col2-3.about { width:620px; height:330px; margin:10px; float:left; border:0; }
 .col2-3.services { width:620px; height:330px; margin:10px; float:left; border:0; }
 .col2-3.clients { width:620px; height:330px; margin:10px; float:left; border:0; }
