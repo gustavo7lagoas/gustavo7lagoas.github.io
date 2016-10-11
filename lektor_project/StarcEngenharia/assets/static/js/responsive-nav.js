@@ -32,8 +32,8 @@ jQuery('#options li a').click(function() {
 	});
 
 jQuery('#options li a').click(function() {
-	jQuery('#options li a').removeClass('selected')
-	jQuery(this).addClass('selected')
+	jQuery('#options li a').removeClass('selected');
+	jQuery(this).addClass('selected');
 });
 
 

@@ -1,5 +1,10 @@
 jQuery(document).ready(function(){
 
+	if(jQuery(location).attr('href').indexOf('projects') != -1 ) {
+		jQuery('#options li a').removeClass('selected');
+		jQuery('#options li:nth-of-type(4) a').addClass('selected');
+	}
+
 	jQuery('.about, .portfolio').hover(function() {
 		jQuery(this).find('.movable-content').stop().animate({
 			left: '300px'

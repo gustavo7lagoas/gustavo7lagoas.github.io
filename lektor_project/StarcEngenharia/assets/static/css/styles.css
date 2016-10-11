@@ -93,11 +93,11 @@ h4 { font-size:16px; font-weight:700; color:#d4d4d4; padding:47px 40px 0px 40px;
 .col2-3.about { width:620px; height:330px; margin:10px; float:left; border:0; }
 .col2-3.services { width:620px; height:330px; margin:10px; float:left; border:0; }
 .col2-3.clients { width:620px; height:330px; margin:10px; float:left; border:0; }
-.col2-3.project { width:620px; height:300px; margin:10px; float:left; border:0; }
+.col2-3.project { width:620px; height:330px; margin:10px; float:left; border:0; }
 .break { height:50px; position:relative; }
 .images { display:block; position:relative; }
 .title:before {content:''; height:0; width:0; border-width:12px 12px 12px 12px; border-style:solid; border-color:rgba(255,255,255,0) rgba(255,255,255,0) #fff rgba(255,255,255,0); position:absolute; top:-24px; left:50%; margin-left:-12px; }
-.title {height:84px; width:300px; background:#fff; position:absolute; bottom:0px; text-align:center }
+.title {height:106px; width:300px; background:#fff; position:absolute; bottom:0px; text-align:center }
 .logo { width:140px; height:103px; text-align:center; padding-top:37px; float:left; margin-right:20px; margin-bottom:20px; background-color:#222325; background-color: rgba(255,255,255,0.05);}
 .logo.last {margin-right:0px; }
 .logo.bottom {margin-bottom:0px; }
@@ -124,7 +124,7 @@ h4 { font-size:16px; font-weight:700; color:#d4d4d4; padding:47px 40px 0px 40px;
 --------------------------------------------------------------------------------------------------------*/
 .images img {width:100%; display: block; max-width: 100% !important; z-index:9 }
 .infos {width:300px; height:300px; top:0; left:0px; border:0; padding:0; display:block; z-index:1; position:absolute; background:url(../images/bg-html.png) repeat #1b1c1e;}
-.movable-content {z-index:11; position:absolute; width:300px; height:300px; }
+.movable-content {z-index:11; position:absolute; width:300px; height:330px; }
 .tab.first {margin-top:10px; }
 .tab {background-color:#222325; background-color: rgba(255,255,255,0.05); width:64px; height:64px; margin-bottom:8px; position:relative; display:inline-block; float:left }
 .hover-title:before {content:''; height:0; width:0; border-width:6px 6px 6px 6px; border-style:solid; border-color:rgba(255,255,255,0) #fff rgba(255,255,255,0) rgba(255,255,255,0); position:absolute; margin-left:-21px; margin-top:3px; }

@@ -31,11 +31,13 @@
     <h2>{{ this.name }}</h2>
     <h3>{{ this.description }}</h3>
 </div>
+{% if this.quote %}
 <div class="element {{ this.id }} clearfix col1-3">
-    <p class="blockquote">“ This could be a blockquote alright. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tristique odio. ” <span><br />
-        John Doe, Company Name</span>
+    <p class="blockquote">“ {{ this.quote }} ” <span><br />
+        {{ this.author }}</span>
     </p>
 </div>
+{% endif %}
 <div class="element clearfix col2-3 contact">
     <div id="map"></div>
 </div>
