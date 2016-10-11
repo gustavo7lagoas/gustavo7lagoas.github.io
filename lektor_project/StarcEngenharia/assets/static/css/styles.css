@@ -61,7 +61,7 @@ h2.blog-heading { padding:31px 40px 0px 40px;  }
 .col1-3.middle p {font-size:16px; text-align:center; padding:26px 60px 0px 60px; position:relative; color:#999; font-weight:normal; letter-spacing:-1px;  }
 .col1-3.middle p span {color:#999; font-size:12px; letter-spacing:1px; font-style:normal; font-weight:normal; }
 .col1-3.middle a {color:#999; }
-h3 { font-size:20px; font-weight:300; color:#999; padding:14px 50px 30px 40px; position:absolute; bottom:0; }
+h3 { font-size:20px; font-weight:300; color:#999; padding:14px 50px 30px 40px; position:absolute; }
 h3 span {font-style:italic; }
 h3.blockquote { font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; font-weight:normal; font-size:20px; padding-bottom:29px; clear:both }
 h4 { font-size:16px; font-weight:700; color:#d4d4d4; padding:47px 40px 0px 40px; }
