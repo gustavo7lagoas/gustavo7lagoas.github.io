@@ -1,0 +1,8 @@
+{% for service in site.get('/services').children %}
+<div class="element clearfix col2-3 services">
+    <h2>{{ service.title }}</h2>
+    <p>
+        {{ service.description }}
+    </p>
+</div>
+{% endfor %}
