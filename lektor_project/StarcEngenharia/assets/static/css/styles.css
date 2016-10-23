@@ -57,7 +57,6 @@ h2, h3, h4 { line-height:1.5; letter-spacing:-1px }
 h2 { font-size:28px; font-weight:700; color:#d4d4d4; padding:35px 40px 0px 40px; }
 h2.blog-heading { padding:31px 40px 0px 40px;  }
 .clients h2 {padding-bottom:23px; }
-.col1-3 h2 { padding:21px 25px 0px 25px; font-size:28px; text-transform:none }
 .col1-3.middle p {font-size:16px; text-align:center; padding:26px 60px 0px 60px; position:relative; color:#999; font-weight:normal; letter-spacing:-1px;  }
 .col1-3.middle p span {color:#999; font-size:12px; letter-spacing:1px; font-style:normal; font-weight:normal; }
 .col1-3.middle a {color:#999; }
