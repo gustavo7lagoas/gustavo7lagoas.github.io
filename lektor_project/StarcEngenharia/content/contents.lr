@@ -1,16 +1,11 @@
+_model: page
+---
 title: Welcome to StarcEngenharia!
 ---
-tbio:
-
-Formado Engenheiro Civil na Universidade Federal de Santa Catarina, com habilitação em Engenharia de Produção, atua na orçamentação, gestão e execução de obras desde 1998.
-Ao longo de sua carreira profissional participou dos mais variados tipos de obra, como contenções, fundações especiais, construção de hospitais, shopping centers, supermercados, escolas, universidades, igrejas, residências, condomínios, etc, em vários estados do Brasil.
-Após um longo período trabalhando em construtoras da Grande Florianópolis, em 2012 decidiu utilizar o conhecimento técnico e prático adquirido ao longo dos anos fundando a STARC Engenharia juntamente com o Engenheiro Ricardo Schwabe.
+clients: A Starc trabalha com um variado portifólio de clientes residenciais e comerciais em obras de vários tipos.
 ---
-rbio:
-
-Formação em Engenharia Civil e Engenharia de Segurança do Trabalho pela Universidade Federal de Santa Catarina. Atuou durante 15 anos em grandes construtoras da Grande Florianópolis participando de obras de grande porte, construções de edifícios residenciais, edifícios comerciais, condomínios, obras de contenções, shoppings, hospitais, igrejas, etc..
-Ingressou através de concurso público na Prefeitura Municipal de São José - SC, onde atuou durante quatro anos na SUSP no setor de análise de projetos, fiscalização de loteamentos e também durante um ano na Secretaria de Infraestrutura no setor de direção e fiscalização de obras. Também atuou como projetista, elaborando projetos complentares de Engenharia. Tem grande experiência em orçamentação, planejamento e aquisição de materiais. Em 2012, junto com o sócio Thiago Chiarelli, realizou o sonho de reunir toda a experiência profissional e fundar a Starc Engenharia.
+company: A STARC tem, em seu alicerce, transparência e respeito ao cliente. Seus diretores e colaboradores seguem a filosofia de maxima transparência e honestidade, sempre dispostos a atender aos clientes da melhor maneira possível. Com larga experiência em variados tipos de obras, a STARC possui um banco de dados de referência, que a auxilia a realizar estimativas apuradas de custos em prazos reduzidos, de acordo com as características de cada empreendimento.
 ---
-rbioshort: Formação em Engenharia Civil e Engenharia de Segurança do Trabalho...
+home: Trabalhamos com Administração e Gerenciamento de obras, comerciais e residenciais.
 ---
-tbioshort: Formado Engenheiro Civil na Universidade Federal de Santa Catarina...
+services: A Starc Engenharia disponibiliza a seus clientes várias formas de contratação, adequando-se às necessidades de cada tipo de serviço. Entre os tipos de contratação praticados pela Starc Engenharia estão: Administração e Gerenciamento, Empreitada Global ou Parcial e Incorporação imobiliária.

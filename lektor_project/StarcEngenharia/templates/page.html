@@ -8,7 +8,7 @@
                 <div class="nav-button"> <span class="nav-bar"></span> <span class="nav-bar"></span> <span class="nav-bar"></span> </div>
             </div>
             <h2>Conheça o nosso portfólio de projetos. </h2>
-            <h3>Trabalhamos com Administração e Gerenciamento de obras, comerciais e residenciais.</h3>
+            <h3>{{ this.home }}</h3>
         </div>
     </div>
 </a>
@@ -25,51 +25,21 @@
                 <div class="nav-button"> <span class="nav-bar"></span> <span class="nav-bar"></span> <span class="nav-bar"></span> </div>
             </div>
             <h2>Serviços</h2>
-            <h3>A Starc Engenharia disponibiliza a seus clientes várias formas de contratação, adequando-se às necessidades de cada tipo de serviço. Entre os tipos de contratação praticados pela Starc Engenharia estão: Administração e Gerenciamento, Empreitada Global ou Parcial e Incorporação imobiliária.</h3>
+            <h3>{{ this.services }}</h3>
         </div>
     </div>
 </a>
 <div class="element clearfix col1-3 services no-padding">
     <div class="images"><img src="{{ '/static/images/pic2.jpg'|url }}" alt="" /></div>
 </div>
+{% for service in site.query('/services').all() %}
 <div class="element clearfix col2-3 services">
-    <h2>Administração</h2>
+    <h2>{{ service.name }}</h2>
     <p>
-        Taxa de Administração sobre os custos gerais da obra. Neste caso é cobrada uma taxa,
-        previamente estabelecida, a ser aplicada mensalmente sobre os gastos da obra.
-        Existem outras alternativas desta modalidade que incluem reembolsos de determinados gastos
-        e pagamentos fixos para determinados itens de custos. Indicado para obras de construção e
-        reforma, onde pode haver variações de quantidades e/ou especificações dos materiais aplicados.
+        {{ service.description }}
     </p>
 </div>
-<div class="element clearfix col2-3 services">
-    <h2>Condomínio</h2>
-    <p>
-        Construção a preço de custo é a obra em que um grupo de adquirentes, denominados condôminos,
-        levam a cabo uma construção mediante aporte de parcelas periódicas, bancado o custo exato da obra.
-        Essa modalidade se distingue da construção a preço fechado, que é aquela em que o adquirente compra
-        o imóvel por um preço certo, fixado previamente com a construtora.
-    </p>
-</div>
-<div class="element clearfix col2-3 services">
-    <h2>Empreitada Global</h2>
-    <p>
-        Este tipo de contratação contempla os custos diretos envolvidos mais o BDI da Construtora.
-        Neste caso as quantidades dos serviços e especificações dos materiais são previamente determinadas,
-        arcando o construtor com os riscos de um eventual erro na quantificação de cada serviço.
-        A medição e, campo dos serviços realizados normalmente se faz pela determinação do percentual
-        executado de cada serviço, até o limite do valor proposto.
-    </p>
-</div>
-<div class="element clearfix col2-3 services">
-    <h2>Incorporação Imobiliária</h2>
-    <p>
-        Incorporação imobiliária, no direito brasileiro, é nome dado para o conjunto de atividades exercidas
-        com a finalidade de construir ou promover a construção de edificações ou conjunto de edificações,
-        bem como a sua comercialização, total ou parcial, compostas de unidades autônomas que, em seu conjunto,
-        formam um condomínio.
-    </p>
-</div>
+{% endfor %}
 <a href="#filter=.clients">
     <div class="element home clearfix col2-3 clients">
         <div class="element-bg">
@@ -77,13 +47,12 @@
             <div class="number">
                 <div class="nav-button"> <span class="nav-bar"></span> <span class="nav-bar"></span> <span class="nav-bar"></span> </div>
             </div>
-            <h3 class="blockquote">“ This could be a blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tristique odio, quis fringilla. ”<br />
-                <span>John Doe, Company Name</span>
+            <h3>{{ this.clients }}<br />
             </h3>
         </div>
     </div>
 </a>
-<div class="element clearfix col1-3 clients">
+<div class="element clearfix home col1-3 clients">
     <div class="logo"><img src="{{ '/static/images/logos/alamo.jpg'|url }}" alt="" /></div>
     <div class="logo last"><img src="{{ '/static/images/logos/comarchi.jpg'|url }}" alt="" /></div>
     <div class="logo bottom"><img src="{{ '/static/images/logos/quatro_estacoes.jpg'|url }}" alt="" /></div>
@@ -102,7 +71,7 @@
     <div class="element home clearfix col2-3 about">
         <div class="element-bg">
             <h2>Empresa</h2>
-            <h3>A STARC tem, em seu alicerce, transparência e respeito ao cliente. Seus diretores e colaboradores seguem a filosofia de maxima transparência e honestidade, sempre dispostos a atender aos clientes da melhor maneira possível. Com larga experiência em variados tipos de obras, a STARC possui um banco de dados de referência, que a auxilia a realizar estimativas apuradas de custos em prazos reduzidos, de acordo com as características de cada empreendimento.</h3>
+            <h3>{{ this.company }}</h3>
         </div>
     </div>
 </a>
