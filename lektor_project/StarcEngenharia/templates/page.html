@@ -40,31 +40,17 @@
     </p>
 </div>
 {% endfor %}
-<a href="#filter=.clients">
-    <div class="element home clearfix col2-3 clients">
-        <div class="element-bg">
-            <h2>Nossos Clientes</h2>
-            <div class="number">
-                <div class="nav-button"> <span class="nav-bar"></span> <span class="nav-bar"></span> <span class="nav-bar"></span> </div>
-            </div>
-            <h3>{{ this.clients }}<br />
-            </h3>
-        </div>
-    </div>
-</a>
 {% set clients = site.query('/clients').all() %}
-{% set classes = ['', 'last', 'bottom', 'last bottom'] %}
+{% set classes = ['', 'last'] %}
 {% for client in clients %}
-{% if loop.index0 % 4 == 0%}
+{% if loop.index0 % 2 == 0%}
 <div class="element clearfix col1-3 clients">
-    <div class="logo {{ classes[loop.index0 % 4] }}"><img src="{{ client.attachments.images.first()|url }}" alt="" /></div>
-{% elif loop.index0 % 4 == 1 or loop.index0 % 4 == 2 %}
-    <div class="logo {{ classes[loop.index0 % 4] }}"><img src="{{ client.attachments.images.first()|url }}" alt="" /></div>
-{% elif loop.index0 % 4 == 3 %}
-    <div class="logo {{ classes[loop.index0 % 4] }}"><img src="{{ client.attachments.images.first()|url }}" alt="" /></div>
+    <div class="logo-client {{ classes[loop.index0 % 2] }}"><img src="{{ client.attachments.images.first()|url }}" alt="" /></div>
+{% elif loop.index0 % 2 == 1 %}
+    <div class="logo-client {{ classes[loop.index0 % 2] }}"><img src="{{ client.attachments.images.first()|url }}" alt="" /></div>
 </div>
 {% endif %}
-{% if loop.last and loop.index0 % 4 != 3 %}
+{% if loop.last and loop.index0 % 2 != 1 %}
 </div>
 {% endif %}
 {% endfor %}
