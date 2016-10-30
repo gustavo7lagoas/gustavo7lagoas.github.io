@@ -1,10 +1,10 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.name }}{% endblock %}
 {% block body %}
+{% set images = this.attachments.images.all() %}
+{% if images %}
 <div class="element {{ this.id }} clearfix col1-1 auto no-border">
     <div class="flexslider">
-        {% set images = this.attachments.images.all() %}
-        {% if images %}
         <div class="images">
             <ul class="slides">
                 {% for image in images %}
@@ -15,9 +15,9 @@
                 <div class="icon close"></div>
             </a>
         </div>
-        {% endif %}
     </div>
 </div>
+{% endif %}
 <div class="element {{ this.id }} clearfix col1-3">
     <h2>{{ this.name }}</h2>
     <ul class="list check">

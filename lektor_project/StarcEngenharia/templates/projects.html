@@ -3,9 +3,14 @@
 {% block body %}
 {% for project in site.get('/projects').children %}
 {% set image = project.attachments.images.first() %}
-<div class="element clearfix col1-3 portfolio portfolio2  overflow">
+<div class="element clearfix col1-3 portfolio overflow">
+    {% if image %}
     <div class="movable-content">
         <div class="images"><img src="{{ image|url }}" alt="" /></div>
+    {% else %}
+    <div class="movable-content not-available">
+        <div class="images"><img src="{{ '/static/images/logos/logo0.png'|url }}" alt="" /></div>
+    {% endif %}
         <div class="title">
             <h4>{{ project.name }}</h4>
             <p>{{ project.type }}</p>
