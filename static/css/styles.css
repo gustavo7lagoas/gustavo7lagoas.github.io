@@ -60,7 +60,7 @@ h2.blog-heading { padding:31px 40px 0px 40px;  }
 .col1-3.middle p {font-size:16px; text-align:center; padding:26px 60px 0px 60px; position:relative; color:#999; font-weight:normal; letter-spacing:-1px;  }
 .col1-3.middle p span {color:#999; font-size:12px; letter-spacing:1px; font-style:normal; font-weight:normal; }
 .col1-3.middle a {color:#999; }
-h3 { font-size:20px; font-weight:300; color:#999; padding:14px 50px 30px 40px; position:absolute; }
+h3 { font-size:18px; font-weight:300; color:#999; padding:14px 50px 30px 40px; position:absolute; }
 h3 span {font-style:italic; }
 h3.blockquote { font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; font-weight:normal; font-size:20px; padding-bottom:29px; clear:both }
 h4 { font-size:16px; font-weight:700; color:#d4d4d4; padding:47px 40px 0px 40px; }
@@ -88,7 +88,6 @@ h4 { font-size:16px; font-weight:700; color:#d4d4d4; padding:47px 40px 0px 40px;
 .col2-3 { width:620px; height:330px; margin:10px; float:left; background-color:#222325; background-color: rgba(255,255,255,0.05);}
 .col2-3.no-border {width:620px; height:330px; margin:10px; float:left; border:0px solid #0c0c0d;  -moz-box-shadow: inset 1px 1px 120px rgba(0, 0, 0, 0); -webkit-box-shadow: inset 1px 1px 120px rgba(0, 0, 0, 0); box-shadow: inset 1px 1px 120px rgba(0, 0, 0, 0);  background:none; }
 .col2-3.contact { width:620px; height:330px; margin:10px; float:left; border:0; }
-.col2-3.contact.map { width:620px; height:680px; margin:10px; float:left; border:0; }
 .col2-3.about { width:620px; height:330px; margin:10px; float:left; border:0; }
 .col2-3.services { width:620px; height:330px; margin:10px; float:left; border:0; }
 .col2-3.clients { width:620px; height:330px; margin:10px; float:left; border:0; }
@@ -116,7 +115,7 @@ h4 { font-size:16px; font-weight:700; color:#d4d4d4; padding:47px 40px 0px 40px;
 
 /* =Googlemaps
 --------------------------------------------------------------------------------------------------------*/
-#map {width:300px; height:330px; margin:0; border:0}
+#map {width:620px; height:330px; margin:0; border:0}
 #map:before, #map:after {	background: none; content: ''; left: 0;	position: absolute;	top: 0;	width: 100%; }
 #map:after {	bottom: 0; top: auto; }
 /* End Googlemaps
