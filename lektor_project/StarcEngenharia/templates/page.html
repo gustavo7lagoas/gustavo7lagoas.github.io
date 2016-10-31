@@ -1,12 +1,9 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-<a href="#filter=.home">
+<a href="{{ '/projects'|url }}#filter=.portfolio">
     <div class="element clearfix col2-3 home">
         <div class="element-bg">
-            <div class="number">
-                <div class="nav-button"> <span class="nav-bar"></span> <span class="nav-bar"></span> <span class="nav-bar"></span> </div>
-            </div>
             <h2>Conheça o nosso portfólio de projetos. </h2>
             <h3>{{ this.home }}</h3>
         </div>
@@ -21,9 +18,6 @@
 <a href="#filter=.services">
     <div class="element home clearfix col2-3 services">
         <div class="element-bg">
-            <div class="number">
-                <div class="nav-button"> <span class="nav-bar"></span> <span class="nav-bar"></span> <span class="nav-bar"></span> </div>
-            </div>
             <h2>Serviços</h2>
             <h3>{{ this.services }}</h3>
         </div>
@@ -65,7 +59,7 @@
         </div>
     </div>
 </a>
-<div class="element home clearfix col1-3 about">
+<div class="element clearfix col1-3 about">
     <div class="element-bg">
         <h2>Equipe - Engenheiros</h2>
         <h3>
@@ -77,7 +71,7 @@
         </h3>
     </div>
 </div>
-<div class="element home clearfix col1-3 contact map">
+<div class="element home clearfix col2-3 contact map">
     <div id="map"></div>
 </div>
 <div class="element home  clearfix col2-3 contact">
