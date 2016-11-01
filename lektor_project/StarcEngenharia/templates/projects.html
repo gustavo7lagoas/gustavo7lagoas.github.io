@@ -12,7 +12,11 @@
         <div class="images"><img src="{{ '/static/images/logos/logo0.png'|url }}" alt="" /></div>
     {% endif %}
         <div class="title">
-            <h4>{{ project.name }}</h4>
+            {% if project.name %}
+                <h4>{{ project.name }}</h4>
+            {% else %}
+                <h4></h4>
+            {% endif %}
             <p>{{ project.type }}</p>
         </div>
     </div>
@@ -25,12 +29,17 @@
             </div>
         </a>
         <div class="clear"></div>
-        <div class="hover-content">
-            <span>Cliente: {{ project.name }}<br />
-            Data: {{ project.date }}<br />
-            Tipo: {{ project.type }}<br />
-            Área: {{ project.area }}<br />
-        </div>
+        <a href="{{ project|url }}#filter=.{{ project.id }}" class="tippy">
+            <div class="hover-content">
+                <span>
+                {% if project.name %}
+                    Cliente: {{ project.name }}<br />
+                {% endif %}
+                Data: {{ project.date }}<br />
+                Tipo: {{ project.type }}<br />
+                Área: {{ project.area }}<br />
+            </div>
+        </a>
     </div>
 </div>
 {% endfor %}
