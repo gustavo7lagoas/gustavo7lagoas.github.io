@@ -1,6 +1,11 @@
 jQuery(document).ready(function(){
 
-	if(jQuery(location).attr('href').indexOf('projects') != -1 ) {
+	if(jQuery(location).attr('href').indexOf('comercial') != -1 ) {
+		jQuery('#options li a').removeClass('selected');
+		jQuery('#options li:nth-of-type(3) a').addClass('selected');
+	}
+
+	if(jQuery(location).attr('href').indexOf('residencial') != -1 ) {
 		jQuery('#options li a').removeClass('selected');
 		jQuery('#options li:nth-of-type(4) a').addClass('selected');
 	}
