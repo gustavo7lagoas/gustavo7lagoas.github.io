@@ -3,7 +3,7 @@
 {% block body %}
 {% for project in site.get('/projects').children %}
 {% set image = project.attachments.images.first() %}
-<div class="element clearfix col1-3 portfolio overflow">
+<div class="element clearfix col1-3 portfolio {{ project.type.lower() }} overflow">
     {% if image %}
     <div class="movable-content">
         <div class="images"><img src="{{ image|url }}" alt="" /></div>
@@ -25,7 +25,8 @@
             </div>
         </a>
         <div class="clear"></div>
-        <div class="hover-content"><span>Cliente: {{ project.name }}<br />
+        <div class="hover-content">
+            <span>Cliente: {{ project.name }}<br />
             Data: {{ project.date }}<br />
             Tipo: {{ project.type }}<br />
             Área: {{ project.area }}<br />

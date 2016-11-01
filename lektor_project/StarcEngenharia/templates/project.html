@@ -11,7 +11,7 @@
                 <li><img src="{{ image|url }}" alt="{{ this.name }}" /></li>
                 {% endfor %}
             </ul>
-            <a href="{{ '/projects'|url }}#filter=.portfolio">
+            <a href="{{ '/projects'|url }}#filter=.portfolio.{{ this.type.lower() }}">
                 <div class="icon close"></div>
             </a>
         </div>
