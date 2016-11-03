@@ -23,18 +23,12 @@
     <h2>{{ this.name }}</h2>
     {% endif %}
     <ul class="list check">
-        {% if this.name %}
-        <li>Cliente: {{ this.name }}</li>
-        {% endif %}
         <li>Data: {{ this.date }}</li>
         <li>Tipo: {{ this.type }}</li>
         <li>Área: {{ this.area }}</li>
     </ul>
 </div>
 <div class="element {{ this.id }} clearfix col2-3">
-    {% if this.name %}
-    <h2>{{ this.name }}</h2>
-    {% endif %}
     <h3>{{ this.description }}</h3>
 </div>
 {% if this.quote %}
