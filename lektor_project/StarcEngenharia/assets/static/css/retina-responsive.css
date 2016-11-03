@@ -103,6 +103,7 @@ input.submit { background:url(../images/bg-submit.png) center center no-repeat; 
 .col1-3.portfolio, .col1-3.about {height:300px; }
 .responsive-col { height:auto !important; }
 .col2-3 { width:298px; height:auto; }
+.col2-3 p, .col1-1 p { padding:20px 15px 0px 15px; }
 .col2-3.contact {width:300px; height:400px; }
 .col2-3.about { width:300px; height:550px; }
 .col2-3.services { width:300px; height:600px; }
