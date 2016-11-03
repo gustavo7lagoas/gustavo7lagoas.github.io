@@ -35,9 +35,13 @@
                 {% if project.name %}
                     Cliente: {{ project.name }}<br />
                 {% endif %}
+                {% if project.date %}
                 Data: {{ project.date }}<br />
+                {% endif %}
                 Tipo: {{ project.type }}<br />
+                {% if project.area %}
                 Área: {{ project.area }}<br />
+                {% endif %}
             </div>
         </a>
     </div>

@@ -23,9 +23,13 @@
     <h2>{{ this.name }}</h2>
     {% endif %}
     <ul class="list check">
+        {% if this.date %}
         <li>Data: {{ this.date }}</li>
+        {% endif %}
         <li>Tipo: {{ this.type }}</li>
+        {% if this.area %}
         <li>Área: {{ this.area }}</li>
+        {% endif %}
     </ul>
 </div>
 <div class="element {{ this.id }} clearfix col2-3">
