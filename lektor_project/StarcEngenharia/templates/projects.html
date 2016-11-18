@@ -17,7 +17,11 @@
             {% else %}
                 <h4></h4>
             {% endif %}
-            <p>{{ project.type }}</p>
+            {% if project.client %}
+                <p>{{ project.client }}</p>
+            {% else %}
+                <p></p>
+            {% endif %}
         </div>
     </div>
     <div class="infos">
