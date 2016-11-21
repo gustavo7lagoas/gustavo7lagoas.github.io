@@ -70,21 +70,24 @@
         </div>
     </div>
 </a>
-<div class="element clearfix col1-3 about">
-    <div class="element-bg">
-        <h2>Equipe</h2>
-        <h3>
-            Eng. Ricardo Schwabe<br />
-            <a href="mailto:thiago@starc.eng.br">ricardo@starc.eng.br</a>
-            <br />
-            Eng. Thiago Chiarelli<br />
-            <a href="mailto:thiago@starc.eng.br"> thiago@starc.eng.br</a>
-            <br />
-            Tec. Francislene P. Mendes Fonseca<br />
-            <a href="mailto:francis@starc.eng.br"> francis@starc.eng.br</a>
-        </h3>
-    </div>
+{% for team_member in site.query('/team').all() %}
+{% if loop.index0 % 2 == 0%}
+<div class="element clearfix col1-3 about team-bg">
+        <div class="team">
+{% else %}
+        <div class="team bottom">
+{% endif %}
+            <h2 class="team-member-name">{{ team_member.name }}</h2>
+            <h3 class="team-member-description">
+                {{ team_member.description }}<br />
+                <a href="mailto:{{ team_member.email }}">{{ team_member.email }}</a>
+                <br />
+            </h3>
+        </div>
+{% if loop.last or loop.index0 % 2 == 1%}
 </div>
+{% endif %}
+{% endfor %}
 <div class="element home clearfix col2-3 contact map">
     <div id="map"></div>
 </div>
