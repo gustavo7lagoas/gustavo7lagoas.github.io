@@ -54,7 +54,7 @@ a:hover { text-decoration:none; /*color:#fff;*/ }
 h1#logo { position:relative; width:256px; height:73px; padding-top:25px; padding-bottom:9px; margin:0 auto; }
 h1#logo a { display:block; background:url(../images/logos/logo0.png) no-repeat; background-size:256px 73px; width:256px; height:82px; text-indent:-9999px; }
 h2, h3, h4 { line-height:1.5; letter-spacing:-1px }
-h2 { font-size:28px; font-weight:700; color:#d4d4d4; padding:35px 40px 0px 40px; }
+h2 { font-size:28px; font-weight:700; color:#d4d4d4; padding:30px 40px 0px 40px; }
 h2.blog-heading { padding:31px 40px 0px 40px;  }
 .clients h2 {padding-bottom:23px; }
 .col1-3.middle p {font-size:16px; text-align:center; padding:26px 60px 0px 60px; position:relative; color:#999; font-weight:normal; letter-spacing:-1px;  }
@@ -67,6 +67,8 @@ h4 { font-size:16px; font-weight:700; color:#d4d4d4; padding:47px 40px 0px 40px;
 .title h4 { color:#1b1c1e; padding:21px 20px 3px 20px; line-height:1; letter-spacing:-1px }
 .infos h4 { padding:25px 20px 0px 20px; line-height:1; }
 .number {position:absolute; right:45px; top:40px; display:inline-block; }
+.team-member-name { font-size:22px; }
+.team-member-description { font-size:18px; }
 /* End Headings
 --------------------------------------------------------------------------------------------------------*/
 
@@ -102,6 +104,9 @@ h4 { font-size:16px; font-weight:700; color:#d4d4d4; padding:47px 40px 0px 40px;
 .logo.bottom {margin-top:5px; }
 .logo img { max-width: 80%; max-height: 80%; vertical-align: middle; }
 .logo-helper { display: inline-block; height: 100%; vertical-align: middle; }
+.team-bg { background:none; }
+.team { width:300px; height:160px; float:left; margin-bottom:5px; background-color:#222325; background-color: rgba(255,255,255,0.05); }
+.team.bottom { margin-top:5px; }
 .overflow {overflow:hidden; }
 .certificate {background:url(../images/bg-certificate.png) center top no-repeat; position:relative; width:100%; height:40px; margin-top:35px; padding-bottom:20px; }
 .award {background:url(../images/bg-award.png) center top no-repeat; position:relative; width:100%; height:40px; margin-top:35px; padding-bottom:20px;  }
