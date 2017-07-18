@@ -104,13 +104,11 @@
 </div>
 <div class="element home  clearfix col2-3 contact">
     <h2>Starc Engenharia</h2>
-    <p> Rodovia Admar Gonzaga, 440 <br />
-        Edifício América Officenter, Sala 204, Itacorubi<br />
-        Florianópolis, Santa Catariana<br />
-        CEP: 88034-000<br />
+        {{this.address}}
+    <p>
         <a href="mailto:contato@starc.eng.br"><img src="{{ '/static/images/bg-submit.png'|url }}"/>
             contato@starc.eng.br</a><br />
-        Fones: (48) - 3365-6001 / 3365-6002
+        Fones: ({{this.ddd}}) - {{this.phone_1}} / {{this.phone_2}}
     </p>
 </div>
 </div>
