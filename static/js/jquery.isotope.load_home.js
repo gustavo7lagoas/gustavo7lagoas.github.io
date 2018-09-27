@@ -1,4 +1,5 @@
 jQuery(window).load(function(){
+
 if ( $('.flexslider')[0] ) {
     jQuery('.flexslider').flexslider({
     animation: "slide",
@@ -17,15 +18,15 @@ var $container = $('#container'),
       $container.isotope({
         itemSelector : '.element',
         masonry: { columnWidth: $container.width() / 12 }
-
+      
     		  });
-
-
-
-
+  
+  
+				
+  
       var $optionSets = $('#options').find('.option-set'),
           isOptionLinkClicked = false;
-
+  
       // switches selected class on buttons
       function changeSelectedLink( $elem ) {
         // remove selected class on previous item
@@ -33,8 +34,8 @@ var $container = $('#container'),
         // set selected class on new item
         $elem.addClass('selected');
       }
-
-
+  
+  
 	$optionSets.find('a[href^="#filter"]').click(function(){
         var $this = $(this);
         // don't proceed if already selected
@@ -68,7 +69,7 @@ var $container = $('#container'),
         $container.isotope( options );
         // save options
         isotopeOptions = hashOptions;
-
+    
         // if option link was not clicked
         // then we'll need to update selected links
         if ( !isOptionLinkClicked ) {
@@ -85,15 +86,15 @@ var $container = $('#container'),
             changeSelectedLink( $selectedLink );
           }
         }
-
+    
         isOptionLinkClicked = false;
         hashChanged = true;
       })
         // trigger hashchange to capture any hash data on init
-
+		
         .trigger('hashchange');
-
-
+		
+		
 		return false;
 //		});
 }
@@ -113,12 +114,12 @@ var $container = $('#container'),
       $container.isotope({
         itemSelector : '.element',
         masonry: { columnWidth: $container.width() / 12 }
-
+      
     		  });
-
+  
       var $optionSets = $('#options').find('.option-set'),
           isOptionLinkClicked = false;
-
+  
       // switches selected class on buttons
       function changeSelectedLink( $elem ) {
         // remove selected class on previous item
@@ -126,8 +127,8 @@ var $container = $('#container'),
         // set selected class on new item
         $elem.addClass('selected');
       }
-
-
+  
+  
 	$optionSets.find('a[href^="#filter"]').click(function(){
         var $this = $(this);
         // don't proceed if already selected
@@ -161,14 +162,13 @@ var $container = $('#container'),
         $container.isotope( options );
         // save options
         isotopeOptions = hashOptions;
-
+    
         // if option link was not clicked
         // then we'll need to update selected links
         if ( !isOptionLinkClicked ) {
           // iterate over options
           var hrefObj, hrefValue, $selectedLink;
           for ( var key in options ) {
-            console.log(options[ key ]);
             hrefObj = {};
             hrefObj[ key ] = options[ key ];
             // convert object into parameter string
@@ -179,19 +179,19 @@ var $container = $('#container'),
             changeSelectedLink( $selectedLink );
           }
         }
-
+    
         isOptionLinkClicked = false;
         hashChanged = true;
       })
         // trigger hashchange to capture any hash data on init
-
+		
         .trigger('hashchange');
-
-
+		
+		
 		return false;
 //		});
 }
-
+  
 });
 
 
@@ -200,3 +200,4 @@ jQuery(window).load(function(){
 		jQuery('#container').isotope('reLayout');
 	}, 1000);
 });
+

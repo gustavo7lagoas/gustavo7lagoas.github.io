@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+{% for project in site.get('/projects').children %}
+{% set image = project.attachments.images.first() %}
+<div class="element clearfix col1-3 portfolio {{ project.type.lower() }} overflow">
+    {% if image %}
+    <div class="movable-content">
+        <div class="images"><img src="{{ image|url }}" alt="" /></div>
+    {% else %}
+    <div class="movable-content not-available">
+        <div class="images"><img src="{{ '/static/images/logos/logo0.png'|url }}" alt="" /></div>
+    {% endif %}
+        <div class="title">
+            {% if project.name %}
+                <h4>{{ project.name }}</h4>
+            {% else %}
+                <h4></h4>
+            {% endif %}
+            {% if project.client %}
+                <p>{{ project.client }}</p>
+            {% else %}
+                <p></p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="infos">
+        <div class="nav-button2 center"> <span class="nav-bar"></span> <span class="nav-bar"></span> <span class="nav-bar"></span> </div>
+        <a href="{{ project|url }}#filter=.{{ project.id }}" class="tippy">
+            <div class="tab"><i class="icons view-more"></i></div>
+            <div class="alignleft">
+                <div class="hover-title">Ver Detalhes</div>
+            </div>
+        </a>
+        <div class="clear"></div>
+        <a href="{{ project|url }}#filter=.{{ project.id }}" class="tippy">
+            <div class="hover-content">
+                <span>
+                {% if project.name %}
+                    Cliente: {{ project.name }}<br />
+                {% endif %}
+                {% if project.date %}
+                Data: {{ project.date }}<br />
+                {% endif %}
+                Tipo: {{ project.type }}<br />
+                {% if project.area %}
+                Área: {{ project.area }}<br />
+                {% endif %}
+            </div>
+        </a>
+    </div>
+</div>
+{% endfor %}
+<div class="element home clearfix col2-3 contact">
+    <div id="map"></div>
+</div>
+{% endblock %}

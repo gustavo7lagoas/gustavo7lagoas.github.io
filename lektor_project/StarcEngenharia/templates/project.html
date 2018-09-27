@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.name }}{% endblock %}
+{% block body %}
+{% set images = this.attachments.images.all() %}
+{% if images %}
+<div class="element {{ this.id }} clearfix col1-1 auto no-border">
+    <div class="flexslider">
+        <div class="images">
+            <ul class="slides">
+                {% for image in images %}
+                <li><img src="{{ image|url }}" alt="{{ this.name }}" /></li>
+                {% endfor %}
+            </ul>
+            <a href="{{ '/projects'|url }}#filter=.portfolio.{{ this.type.lower() }}">
+                <div class="icon close"></div>
+            </a>
+        </div>
+    </div>
+</div>
+{% endif %}
+<div class="element {{ this.id }} clearfix col1-3">
+    {% if this.name %}
+    <h2>{{ this.name }}</h2>
+    {% endif %}
+    <ul class="list check">
+        {% if this.date %}
+        <li>Data: {{ this.date }}</li>
+        {% endif %}
+        <li>Tipo: {{ this.type }}</li>
+        {% if this.area %}
+        <li>Área: {{ this.area }}</li>
+        {% endif %}
+    </ul>
+</div>
+<div class="element {{ this.id }} clearfix col2-3">
+    <h3>{{ this.description }}</h3>
+</div>
+{% if this.quote %}
+<div class="element {{ this.id }} clearfix col1-3">
+    <p class="blockquote">“ {{ this.quote }} ” <span><br />
+        {{ this.quote_author }}</span>
+    </p>
+</div>
+{% endif %}
+<div class="element clearfix col2-3 contact">
+    <div id="map"></div>
+</div>
+{% endblock %}

@@ -31,7 +31,7 @@ html {overflow: -moz-scrollbars-vertical; overflow-y: scroll; }
 body { font: 18px 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif; color:#999; letter-spacing:-1px; background:url(../images/bg-html.png) repeat; overflow:hidden}
 strong { font-weight:bold; }
 a, a > * {-webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s; }
-p { line-height:1.5; font-size:18px; font-weight:300; letter-spacing:-1px }
+p { line-height:1.5; font-size:22px; font-weight:300; letter-spacing:-1px }
 .col2-3 p, .col1-1 p { padding:20px 40px 0px 40px; }
 .col1-3 p {position:absolute; bottom:0; }
 .col1-3 p { padding:0px 25px 21px 25px; }
@@ -53,22 +53,21 @@ a:hover { text-decoration:none; /*color:#fff;*/ }
 --------------------------------------------------------------------------------------------------------*/
 h1#logo { position:relative; width:256px; height:73px; padding-top:25px; padding-bottom:9px; margin:0 auto; }
 h1#logo a { display:block; background:url(../images/logos/logo0.png) no-repeat; background-size:256px 73px; width:256px; height:82px; text-indent:-9999px; }
-h2, h3, h4 { line-height:1.5; letter-spacing:-1px }
-h2 { font-size:28px; font-weight:700; color:#d4d4d4; padding:30px 40px 0px 40px; }
+h2, h3, h4 { line-height:1.5; letter-spacing:-2px }
+h2 { font-size:37px; font-weight:700; color:#d4d4d4; padding:35px 40px 0px 40px; }
 h2.blog-heading { padding:31px 40px 0px 40px;  }
 .clients h2 {padding-bottom:23px; }
-.col1-3.middle p {font-size:16px; text-align:center; padding:26px 60px 0px 60px; position:relative; color:#999; font-weight:normal; letter-spacing:-1px;  }
+.col1-3 h2 { padding:21px 25px 0px 25px; font-size:28px; text-transform:none }
+.col1-3.middle p {font-size:18px; text-align:center; padding:26px 60px 0px 60px; position:relative; color:#999; font-weight:normal; letter-spacing:-1px;  }
 .col1-3.middle p span {color:#999; font-size:12px; letter-spacing:1px; font-style:normal; font-weight:normal; }
 .col1-3.middle a {color:#999; }
-h3 { font-size:18px; font-weight:300; color:#999; padding:14px 50px 30px 40px; position:absolute; }
+h3 { font-size:28px; font-weight:300; color:#999; padding:14px 50px 30px 40px; position:absolute; bottom:0; }
 h3 span {font-style:italic; }
-h3.blockquote { font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; font-weight:normal; font-size:20px; padding-bottom:29px; clear:both }
-h4 { font-size:16px; font-weight:700; color:#d4d4d4; padding:47px 40px 0px 40px; }
+h3.blockquote { font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; font-weight:normal; font-size:27px; padding-bottom:29px; clear:both }
+h4 { font-size:20px; font-weight:700; color:#d4d4d4; padding:47px 40px 0px 40px; }
 .title h4 { color:#1b1c1e; padding:21px 20px 3px 20px; line-height:1; letter-spacing:-1px }
 .infos h4 { padding:25px 20px 0px 20px; line-height:1; }
 .number {position:absolute; right:45px; top:40px; display:inline-block; }
-.team-member-name { font-size:22px; }
-.team-member-description { font-size:18px; }
 /* End Headings
 --------------------------------------------------------------------------------------------------------*/
 
@@ -84,42 +83,34 @@ h4 { font-size:16px; font-weight:700; color:#d4d4d4; padding:47px 40px 0px 40px;
 #container {  padding-bottom:50px; margin-top:30px;}
 .col1-1 { width:940px; margin:10px;  background-color:#222325; background-color: rgba(255,255,255,0.05); }
 .col1-1.no-border {width:940px; border:0; }
-.col1-3 { width:300px; height:330px; margin:10px; float:left; background-color:#222325; background-color: rgba(255,255,255,0.05);}
-.col1-3.portfolio { width:300px; height:300px; margin:10px; float:left; background-color:#222325; background-color: rgba(255,255,255,0.05);}
+.col1-3 { width:300px; height:300px; margin:10px; float:left; background-color:#222325; background-color: rgba(255,255,255,0.05);}
 .col1-3.clients {background:none }
-.col2-3 { width:620px; height:330px; margin:10px; float:left; background-color:#222325; background-color: rgba(255,255,255,0.05);}
-.col2-3.no-border {width:620px; height:330px; margin:10px; float:left; border:0px solid #0c0c0d;  -moz-box-shadow: inset 1px 1px 120px rgba(0, 0, 0, 0); -webkit-box-shadow: inset 1px 1px 120px rgba(0, 0, 0, 0); box-shadow: inset 1px 1px 120px rgba(0, 0, 0, 0);  background:none; }
-.col2-3.contact { width:620px; height:330px; margin:10px; float:left; border:0; }
-.col2-3.about { width:620px; height:330px; margin:10px; float:left; border:0; }
-.col2-3.services { width:620px; height:330px; margin:10px; float:left; border:0; }
-.col2-3.clients { width:620px; height:330px; margin:10px; float:left; border:0; }
-.col2-3.project { width:620px; height:330px; margin:10px; float:left; border:0; }
+.col2-3 { width:620px; height:300px; margin:10px; float:left; background-color:#222325; background-color: rgba(255,255,255,0.05);}
+.col2-3.no-border {width:620px; height:300px; margin:10px; float:left; border:0px solid #0c0c0d;  -moz-box-shadow: inset 1px 1px 120px rgba(0, 0, 0, 0); -webkit-box-shadow: inset 1px 1px 120px rgba(0, 0, 0, 0); box-shadow: inset 1px 1px 120px rgba(0, 0, 0, 0);  background:none; }
+.col2-3.contact { width:620px; height:620px; margin:10px; float:left; border:0; }
+.col2-3.about { width:620px; height:620px; margin:10px; float:left; border:0; }
+.col2-3.services { width:620px; height:420px; margin:10px; float:left; border:0; }
+.col2-3.clients { width:620px; height:420px; margin:10px; float:left; border:0; }
+.col2-3.project { width:620px; height:420px; margin:10px; float:left; border:0; }
 .break { height:50px; position:relative; }
 .images { display:block; position:relative; }
-.not-available { background-color: #222325; }
 .title:before {content:''; height:0; width:0; border-width:12px 12px 12px 12px; border-style:solid; border-color:rgba(255,255,255,0) rgba(255,255,255,0) #fff rgba(255,255,255,0); position:absolute; top:-24px; left:50%; margin-left:-12px; }
-.title {height:106px; width:300px; background:#fff; position:absolute; bottom:0px; text-align:center }
-.logo { width:140px; height:140px; text-align:center; float:left; margin-right:5px; margin-bottom:5px; }
-.logo.last {margin-left:5px; }
-.logo.bottom {margin-top:5px; }
-.logo img { max-width: 80%; max-height: 80%; vertical-align: middle; }
-.logo-helper { display: inline-block; height: 100%; vertical-align: middle; }
-.team-bg { background:none; }
-.team { width:300px; height:160px; float:left; margin-bottom:5px; background-color:#222325; background-color: rgba(255,255,255,0.05); }
-.team.bottom { margin-top:5px; }
+.title {height:84px; width:300px; background:#fff; position:absolute; bottom:0px; text-align:center }
+.logo { width:140px; height:103px; text-align:center; padding-top:37px; float:left; margin-right:20px; margin-bottom:20px; background-color:#222325; background-color: rgba(255,255,255,0.05);}
+.logo.last {margin-right:0px; }
+.logo.bottom {margin-bottom:0px; }
 .overflow {overflow:hidden; }
 .certificate {background:url(../images/bg-certificate.png) center top no-repeat; position:relative; width:100%; height:40px; margin-top:35px; padding-bottom:20px; }
 .award {background:url(../images/bg-award.png) center top no-repeat; position:relative; width:100%; height:40px; margin-top:35px; padding-bottom:20px;  }
 .barrier {height:1px; width:80px; margin:0 auto; position:relative; background:url(../images/bg-html.png) repeat; }
 .auto {height:auto !important; }
-.contact a img {width: 16px; height: 16px; }
 /* =End Main Content
 --------------------------------------------------------------------------------------------------------*/
 
 
 /* =Googlemaps
 --------------------------------------------------------------------------------------------------------*/
-#map {width:620px; height:330px; margin:0; border:0}
+#map {width:620px; height:620px; margin:0; border:0}
 #map:before, #map:after {	background: none; content: ''; left: 0;	position: absolute;	top: 0;	width: 100%; }
 #map:after {	bottom: 0; top: auto; }
 /* End Googlemaps
@@ -182,7 +173,7 @@ span.blockquote { font-family:Georgia, "Times New Roman", Times, serif; font-sty
 /* =Lists
 --------------------------------------------------------------------------------------------------------*/
 ul.list { position:absolute; padding:0 25px 21px 25px; bottom:0 }
-ul.list li { line-height:1.5; font-size:18px; font-weight:300; letter-spacing:-1px; width:auto; padding-left:28px; }
+ul.list li { line-height:1.5; font-size:22px; font-weight:300; letter-spacing:-1px; width:auto; padding-left:28px; }
 ul.check li { background:url(../images/bg-check.png) no-repeat 1px 13px; background-size:13px 11px; }
 /* =End Lists
 --------------------------------------------------------------------------------------------------------*/

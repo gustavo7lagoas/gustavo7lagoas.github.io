@@ -1,0 +1,3 @@
+lektor server
+
+Exit
